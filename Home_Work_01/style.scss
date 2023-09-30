@@ -1,0 +1,314 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - $widhtSite / 2);
+    padding-right: calc(50% - $widhtSite / 2);
+}
+
+.header {
+    height: 75px;
+    background-color: $headerFooterBackground;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    &__link5 {
+        padding-left: 17px;
+    }
+}
+
+.navigation {
+    width: $widhtSite;
+    height: 148px;
+    background-color: #F8F3F4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation__left {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navigation__left__text {
+    color: $ourPinkColor
+}
+
+.navigation__right {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    &__link {
+        color: #636363;
+    }
+    &__link__3 {
+        color: $ourPinkColor;
+    }
+}
+
+.my-carousl .carousel-item img{
+    display: flex;
+    max-height: 777px;
+    object-fit: contain
+}
+
+.carousel-control-prev-icon {
+    background-color: orangered;
+}
+
+.carousel-control-next-icon {
+    background-color: orangered;
+}
+
+.first__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    &__content__title1 {
+        color: $ourPinkColor;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 64px;
+    }
+    &__content__title2 {
+        color: #4D4D4D;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 12px;
+    }
+    &__content__text {
+        color: #5E5E5E;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 48px;
+        max-width: 555px;
+    }
+    &__content__price {
+        color: $ourPinkColor;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 32px;
+    }
+    &__content__menu {
+        display: flex;
+        margin-top: 130px;
+        gap: 42px;
+    }
+    &__content__link {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+}
+
+.first__block__cart {
+    margin-top: 48px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 23px;
+    width: 212px;
+    height: 48px;
+    border: 1px solid $ourPinkColor;
+    &__text {
+        text-decoration: none;
+        color: $ourPinkColor;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.second__block {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    &__content {
+        width: 360px;
+        &__title{
+            color: #000;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 24px;
+        }
+        &__text {
+            color: #5D5D5D;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 12px;
+        }
+        &__price {
+            color: $ourPinkColor;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 18px;
+        }
+    } 
+}
+
+.third__block {
+    min-height: 448px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./img/Layer_1.png);
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    grid-template-columns: repeat(2, 48vw);
+    gap: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__text {
+            margin-top: 30px;
+            color: #222224;
+            text-align: center;
+            font-family: Lato;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &__title {
+            color: #222224;
+            text-align: center;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 167.2%;
+        }
+        &__subtitle {
+            color: #222224;
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 167.2%;
+        }
+    }   
+}
+
+.email_form {
+    margin-top: 30px;
+    display: flex;
+}
+
+.email_input {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #E1E1E1;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    width: 256px;
+    height: 49px;
+    border: none;
+}
+
+.email_button {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: $ourPinkColor;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    width: 100px;
+    height: 49px;
+    border: none;
+}
+
+::placeholder {
+    padding-left: 22px;
+}
+
+.footer {
+    height: 79px;
+    background-color: $headerFooterBackground;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    &__right__text {
+        color: #FBFBFB;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__left {
+        display: flex;
+        gap: 8px;
+        &__link {
+            height: 32px;
+            width: 32px;
+            background-color: #FFF;
+            &__img {
+                margin: 8px 8px;
+            }
+        }
+    }
+}
