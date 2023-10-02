@@ -14,8 +14,8 @@
   height: 75px;
   background-color: #222;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -35,12 +35,12 @@
 }
 
 .navigation {
-  width: 1600px;
-  height: 148px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F8F3F4;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -74,14 +74,30 @@
   max-height: 777px;
   -o-object-fit: contain;
      object-fit: contain;
+  background-color: #F7F7F7;
+  padding-top: 11px;
+  padding-bottom: 42px;
+  z-index: 0;
 }
 
 .carousel-control-prev-icon {
-  background-color: orangered;
+  background-color: rgba(42, 42, 42, 0.1490196078);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='black'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon:hover {
+  background-color: rgba(42, 42, 42, 0.1490196078);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F16D7F'/%3E%3C/svg%3E") !important;
 }
 
 .carousel-control-next-icon {
-  background-color: orangered;
+  background-color: rgba(42, 42, 42, 0.1490196078);
+  background-image: url("./img/nextB.png") !important;
+}
+
+.carousel-control-next-icon:hover {
+  background-color: rgba(42, 42, 42, 0.1490196078);
+  background-image: url("./img/next.svg") !important;
 }
 
 .first__block {
@@ -89,6 +105,8 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+  z-index: 1;
+  margin-top: -65px;
 }
 .first__block__content__title1 {
   color: #F16D7F;
