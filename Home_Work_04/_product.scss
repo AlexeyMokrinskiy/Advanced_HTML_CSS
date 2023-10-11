@@ -1,0 +1,164 @@
+
+.my-carousl .carousel-item img {
+    display: flex;
+    max-height: 777px;
+    object-fit: contain;
+    background-color: #F7F7F7;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    z-index: 0;
+    position: relative;
+}
+
+.carousel-control-prev-icon {
+    background-color: #2A2A2A26;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='black'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon:hover {
+    background-color: #2A2A2A26;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F16D7F'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-color: #2A2A2A26;
+    background-image: url('./img/nextB.png') !important;
+}
+
+.carousel-control-next-icon:hover {
+    background-color: #2A2A2A26;
+    background-image: url('./img/next.svg') !important;
+}
+
+.box-details {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 4;
+    margin-top: -65px;
+    border: 1px solid #EAEAEA;
+    position: absolute;
+    width: 1141px;
+
+    &__title1 {
+        color: $colorSelectSite;
+        @include font-style(14px, 300);
+        margin-top: 64px;
+    }
+
+    &__title2 {
+        color: #4D4D4D;
+        @include font-style(18px, 300);
+        margin-top: 12px;
+    }
+
+    &__text {
+        color: #5E5E5E;
+        text-align: center;
+        @include font-style(14px, 300);
+        margin-top: 48px;
+        max-width: 555px;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+        font-family: Lato;
+        @include font-style(24px, 300);
+        margin-top: 32px;
+    } 
+
+    &__sort {
+        padding-top: 12px;
+        display: flex;
+        gap: 18px;
+    
+        &__detales {
+            position: relative;
+        }
+    
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+        }
+    
+        &__check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6F6E6E;
+            @include font-style(14px, 400);;
+        }
+    
+        &__heading {
+            color: #6F6E6E;
+            @include font-style(14px, 400);;
+        }
+    
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: #FFF;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            padding: 7px 30px 11px 9px;
+            position: absolute;
+            left: -9px;
+            top: 22px;
+            z-index: 1;
+        }
+
+        &__svg:hover path {
+            fill: $colorSelectSite;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        margin-top: 48px;
+        margin-bottom: 64px;
+        align-items: center;
+        border-style: none;
+        border: 1px solid $colorSelectSite;
+        padding: 10px 40px 6px 40px;
+        background-color: white;
+        gap: 22px;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $colorSelectSite;
+        }
+
+        &:hover p {
+            color: white;
+        }
+
+        &:hover svg path {
+            fill: white;
+        }
+
+        &__text {
+            color: $colorSelectSite;
+            @include font-style(16px, 400);
+            padding-top: 11px;
+        }
+    }
+
+}
+
+.product-section {
+    margin-top: 664px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 128px;
+}

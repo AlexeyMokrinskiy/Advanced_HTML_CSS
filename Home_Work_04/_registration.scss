@@ -1,0 +1,118 @@
+
+.registration {
+    margin-top: 64px;
+    @include centrflex(128px);
+    align-items: flex-start;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-title {
+        color: #222;
+        @include font_style(16px, 300);
+        margin-bottom: 21px;
+    }
+
+    &__form-input {
+        width: 359px;
+        height: 44px;
+        margin-bottom: 21px;
+        border-style: none;
+        border: 1px solid #A4A4A4;
+        padding-left: 11px;
+        &::placeholder {
+            color: #B1B1B1;
+            @include font_style(13px, 300);
+        }
+
+        &:hover {
+            box-shadow: 11px 10px 28px -6px #cdcbcb;
+        }
+    }
+
+    &__sex {
+        margin-top: 11px;
+        margin-bottom: 33px;
+        margin-left: 2px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__check {
+        display: flex;
+        text-align: center;
+        gap: 10px;
+        color: #000;
+        @include font_style(13px, 300);
+    }
+
+    &__check-male:after {
+        @include radio_before;
+    }
+
+    &__check-male:checked::after {
+        @include radio_after;
+    }
+
+    &__check-female:after {
+        @include radio_before;
+    }
+
+    &__check-female:checked::after {
+        @include radio_after;
+    }
+
+    &__left-text {
+        color: #B1B1B1;
+        @include font_style(13px, 300);
+        width: 359px;
+        height: 32px;
+    }
+
+    &__left-button {
+        margin-top: 39px;
+        margin-bottom: 96px;
+        border-style: none;
+        border: 1px solid #A4A4A4;
+        width: 167px;
+        height: 50px;
+        @include centrflex(20px);
+        background-color: $colorSelectSite;
+        &:hover{
+            box-shadow: 4px 4px 4px #A4A4A4;
+        }
+
+        &_text {
+            color: #FFF;
+            @include font_style (14px, 400);
+        }
+    }
+
+    &__right {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &_text{
+            color: #000;
+            @include font_style (24px, 300);
+        }
+
+        &_line {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+        }
+    }
+
+    
+}
