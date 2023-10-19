@@ -1,0 +1,247 @@
+.head-brand {
+    display: flex;
+    justify-content: center;
+    background-color: #F1E4E6;
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_box {
+            border-left: 12px solid $colorSelectSite;
+            padding-left: 16px;
+        }
+
+        &_title {
+            color: #222;
+            @include font_style (48px, 900)
+        }
+
+        &_text {
+            color: #222;
+            @include font_style (32px, 700)
+        }
+
+        &_pink {
+            color: $colorSelectSite;
+            @include font_style (32px, 700)
+        }
+    }
+}
+
+.items-section {
+    display: grid;
+    grid-template-columns: repeat(3, 29vw);
+    gap: 2vw;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &__button {
+        border-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &_wight {
+            grid-column: 1 / 4;
+            min-height: 111px;
+        }
+
+        &_img {
+            width: 100%;
+            background: #41300d;
+            opacity: 0.9;
+            filter: brightness(37%);
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+
+        &_text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_sub {
+            color: #FFF;
+            @include font_style (16px, 400);
+        }
+
+        &_title {
+            color: $colorSelectSite;
+            @include font_style (24px, 700);
+        }
+    }
+}
+
+.fetured-section {
+    @include centrflex(2px);
+    flex-direction: column;
+    margin-bottom: 48px;
+
+    &__title {
+        color: #222;
+        @include font_style(30px, 400);      
+    }
+
+    &__subtitle {
+        color: #9F9F9F;
+        @include font_style(14px, 400);
+    }
+}
+
+.lonly-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+
+    &__text {
+        color: $colorSelectSite;
+        @include font_style(16px, 400);
+        padding: 15px 39px 15px 39px;
+        border-style: none;
+        border-color: $colorSelectSite;
+        background-color: white;
+        border: 1px solid $colorSelectSite;
+
+        &:hover {
+            color: white;
+            background-color: $colorSelectSite;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .head-brand {
+            display: grid;
+            grid-template-columns: repeat(2, 48vw);
+            background-color: #F1E4E6;
+            min-height: 360px;
+
+            &__left {
+                display: flex;
+                justify-content: center;
+
+                    &-img {
+                            width: 66%;
+                        }
+                }
+    
+            &__right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                &_box {
+                    border-left: 12px solid $colorSelectSite;
+                    padding-left: 16px;
+                }
+    
+                &_title {
+                    color: #222;
+                    @include font_style (44px, 900)
+                }
+    
+                &_text {
+                    color: #222;
+                    @include font_style (24px, 700)
+                }
+    
+                &_pink {
+                    color: $colorSelectSite;
+                    @include font_style (32px, 700)
+                }
+            }
+        }
+
+    }
+
+@media (max-width: 425px) {
+
+    .head-brand {
+        display: grid;
+        grid-template-columns: repeat(1, 98vw);
+        background-color: #F1E4E6;
+        min-height: 360px;
+
+        &__left {
+            display: none;
+        }
+
+        &__right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_box {
+                border-left: 12px solid $colorSelectSite;
+                padding-left: 16px;
+            }
+
+            &_title {
+                color: #222;
+                @include font_style (38px, 900)
+            }
+
+            &_text {
+                color: #222;
+                @include font_style (20px, 700)
+            }
+
+            &_pink {
+                color: $colorSelectSite;
+                @include font_style (20px, 700)
+            }
+        }
+    }
+
+    .items-section {
+        display: flex;
+        gap: 2vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 64px;
+        padding-bottom: 96px;
+
+        &__button {
+            border-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 80%;
+
+            &_wight {
+                min-height: 50px;
+            }
+
+            &_img {
+                width: 100%;
+                background: #41300d;
+                opacity: 0.9;
+                filter: brightness(37%);
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            }
+
+            &_text {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &_sub {
+                color: #FFF;
+                @include font_style (16px, 400);
+            }
+
+            &_title {
+                color: $colorSelectSite;
+                @include font_style (24px, 700);
+            }
+        }
+    }
+}
